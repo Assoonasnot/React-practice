@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //精确搜索，find方法找到符合条件的项，就不会继续遍历数组
+    const newArr = [{id:1},{id:2},{id:3},{id:4},{id:5}];
+    const result = newArr.find((itemObj)=>{
+      return itemObj.id === 3;
+    })
+    console.log(result); //3
+  </script>
+</body>
+</html>
